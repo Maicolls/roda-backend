@@ -2,7 +2,7 @@ from flask import Flask
 from flask_cors import CORS
 from routes.simulate import simulate_bp
 from routes.requests import requests_bp
-from models import create_tables
+from database import create_tables
 
 app = Flask(__name__)
 CORS(app)
